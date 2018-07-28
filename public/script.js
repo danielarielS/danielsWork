@@ -1,12 +1,34 @@
-// {
-//     "displayName": "PinApp",
-//     "description": "PinApp is a mobile friendly Web Application that allows users to easily add, customize and share their favorite locations.",
-//     "tryMsg":"Add pins at",
-//     "heroku_url":"https://pinapp-spiced.herokuapp.com",
-//     "codeMsg":"Check out the code",
-//     "github_url":"https://github.com/patrinoua/finalproject",
-//     "createdWith":"Made with Node.js, React, Redux and Socket.io",
-//     "comment": "Project developed in collaboration with",
-//     "comment_link": "Daniel Ariel",
-//     "comment_url": "https://github.com/danielarielS"
-// }
+$(document).ready(function() {
+    $("#openClick").click(function(e) {
+        $("#m1").addClass("movePicLeft");
+        $("#m2").addClass("moveTextLeft");
+    });
+    $("#closeClick").click(function(e) {
+        $("#m1").removeClass("movePicLeft");
+        $("#m2").removeClass("moveTextLeft");
+    });
+    $("#openClick1").click(function(e) {
+        $("#s1").addClass("movePicRight");
+        $("#s2").addClass("moveTextRight");
+    });
+    $("#closeClick1").click(function(e) {
+        $("#s1").removeClass("movePicRight");
+        $("#s2").removeClass("moveTextRight");
+    });
+    $("#openClick2").click(function(e) {
+        $("#i1").addClass("movePicLeft");
+        $("#i2").addClass("moveTextLeft");
+    });
+    $("#closeClick2").click(function(e) {
+        $("#i1").removeClass("movePicLeft");
+        $("#i2").removeClass("moveTextLeft");
+    });
+    $("#openClick3").click(function(e) {
+        $("#n1").addClass("movePicRight");
+        $("#n2").addClass("moveTextRight");
+    });
+    $("#closeClick3").click(function(e) {
+        $("#n1").removeClass("movePicRight");
+        $("#n2").removeClass("moveTextRight");
+    });
+});
