@@ -224,6 +224,58 @@ a:hover {
     height: 100vh;
 }
 
+#contact {
+    position: relative;
+    top: 70vh;
+    height: 40vh;
+}
+
+/* ///////////// contact //////////////// */
+
+form {
+    position: absolute;
+    top: 10vh;
+    width: 50vw;
+    height: 30vh;
+    left: 5vw;
+}
+
+textarea {
+    position: absolute;
+    top: 15vh;
+    width: 20vw;
+    height: 150vh;
+    left: 5vw;
+}
+
+.linkTo {
+    border-radius: 20px;
+    height: 10vh;
+    width: 10vw;
+    margin: 0.5vw;
+    -webkit-box-shadow: 9px 7px 12px -4px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 9px 7px 12px -4px rgba(0, 0, 0, 0.58);
+    box-shadow: 9px 7px 12px -4px rgba(0, 0, 0, 0.58);
+}
+
+.linkTo:hover {
+    -webkit-box-shadow: inset 10px 10px 24px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 10px 10px 24px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 10px 10px 24px -6px rgba(0, 0, 0, 0.75);
+}
+
+#link1 {
+    position: absolute;
+    top: 10vh;
+    left: 65vw;
+}
+
+#link2 {
+    position: absolute;
+    top: 10vh;
+    left: 80vw;
+}
+
 /* ///////////// footer //////////// */
 
 footer {

@@ -1,47 +1,57 @@
-const express = require("express");
-const app = express();
-// const bodyParser = require("body-parser");
-// const hb = require("express-handlebars");
-// const fs = require("fs");
+var express = require("express");
+var app = express();
 
-// const { contentEn } = require("./webpageContent.js");
+if (process.env.NODE_ENV) {
+    var mail = process.env.MAIL;
+    var pass = process.env.PASS;
+}
+var info = require("./secrets.json");
+var mail = info.mail;
+var pass = info.pass;
+var nodemailer = require("nodemailer");
+var bodyParser = require("body-parser");
 
-// app.engine("handlebars", hb());
-// app.set("view engine", "handlebars");
 app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/assets"));
 app.use(express.static(__dirname + "/favicon"));
-// app.use(express.static(__dirname + "/index.html"));
-// app.use(
-//     bodyParser.urlencoded({
-//         extended: false
-//     })
-// );
 
-// let myProjects = fs.readdirSync(__dirname + "/projects");
-//
-// var myProjectObjects = myProjects.map(function(project) {
-//     return {
-//         dirName: project,
-//         heroku_url: require("./projects/" + project + "/project.json")
-//             .heroku_url,
-//         github_url: require("./projects/" + project + "/project.json")
-//             .github_url,
-//         createdWith: require("./projects/" + project + "/project.json")
-//             .createdWith,
-//         comment_link: require("./projects/" + project + "/project.json")
-//             .comment_link,
-//         comment_url: require("./projects/" + project + "/project.json")
-//             .comment_url,
-//         displayName: require("./projects/" + project + "/project.json")
-//             .displayName,
-//         description: require("./projects/" + project + "/project.json")
-//             .description,
-//         tryMsg: require("./projects/" + project + "/project.json").tryMsg,
-//         codeMsg: require("./projects/" + project + "/project.json").codeMsg,
-//         comment: require("./projects/" + project + "/project.json").comment
-//     };
-// });
+var transporter = nodemailer.createTransport({
+    host: "smtp.googlemail.com",
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+        user: mail,
+        pass: pass
+    }
+});
+app.use(
+    bodyParser.urlencoded({
+        extended: true
+    })
+);
+app.use(bodyParser.json());
+
+app.post("/contact", function(req, res) {
+    console.log(req.body);
+    var mailOptions = {
+        to: "danielariel70@gmail.com", // list of receivers
+        subject: `${req.body.subject}`, // Subject line
+        text: `${req.body.message} sent from ${req.body.name}
+        ${req.body.email} at ${new Date()}` // plain text body
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, function(error, info) {
+        if (error) {
+            return console.log(error);
+        }
+        console.log("successfully sent");
+    });
+    // res.json({
+    //     success: true
+    // });
+    res.redirect("/");
+});
 
 app.get("*", function(req, res) {
     res.sendFile(__dirname + "/index.html");
