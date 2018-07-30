@@ -40,16 +40,17 @@ a:hover {
     margin-right: 2vw;
     display: flex;
     justify-content: space-between;
-    width: 21vw;
+    width: 30vw;
 }
 
-#linksHolder a {
+#linksHolder p {
     color: white;
     text-decoration: none;
     font-size: 1.4vw;
+    cursor: pointer;
 }
 
-#linksHolder a:hover {
+#linksHolder p:hover {
     color: rgb(200, 108, 74);
 }
 
@@ -232,20 +233,51 @@ a:hover {
 
 /* ///////////// contact //////////////// */
 
-form {
-    position: absolute;
-    top: 10vh;
-    width: 50vw;
+form {}
+
+fieldset {
+    position: relative;
+    top: 24vh;
+    width: 48vw;
     height: 30vh;
     left: 5vw;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+fieldset label {
+    font-size: 1.6vw;
+}
+
+fieldset input {
+    /* margin-left: 2vw; */
+    height: 3vh;
+}
+
+.button {
+    -webkit-box-shadow: 9px 7px 12px -4px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 9px 7px 12px -4px rgba(0, 0, 0, 0.58);
+    box-shadow: 9px 7px 12px -4px rgba(0, 0, 0, 0.58);
+    cursor: pointer;
+    width: 8vw;
+    height: 4vh;
+    border-radius: 10px;
+    margin-left: 20vw;
+    font-size: 1.6vw;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
 }
 
 textarea {
-    position: absolute;
+    /* position: absolute;
     top: 15vh;
-    width: 20vw;
-    height: 150vh;
-    left: 5vw;
+    left: 5vw; */
+    width: 47.3vw;
+    height: 15vh;
+    margin-top: 3vh;
 }
 
 .linkTo {
@@ -266,13 +298,13 @@ textarea {
 
 #link1 {
     position: absolute;
-    top: 10vh;
+    top: 34vh;
     left: 65vw;
 }
 
 #link2 {
     position: absolute;
-    top: 10vh;
+    top: 34vh;
     left: 80vw;
 }
 
@@ -282,7 +314,7 @@ footer {
     height: 7vh;
     background-color: black;
     position: relative;
-    top: 70vh;
+    top: 100vh;
     display: flex;
     align-items: center;
 }

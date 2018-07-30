@@ -31,4 +31,29 @@ $(document).ready(function() {
         $("#n1").removeClass("movePicRight");
         $("#n2").removeClass("moveTextRight");
     });
+
+    $(document).keypress(function(e) {
+        if (e.which == 13) {
+            if (
+                !$("textarea")
+                    .val()
+                    .trim().length < 1
+            ) {
+                $(".button").click();
+                console.log("hey");
+            }
+        }
+    });
+    $("#l1").click(function(e) {
+        window.scrollTo(0, 0);
+    });
+    $("#l2").click(function(e) {
+        window.scrollTo(0, 600);
+    });
+    $("#l3").click(function() {
+        window.scrollTo(0, 1100);
+    });
+    $("#l4").click(function() {
+        window.scrollTo(0, 5100);
+    });
 });
