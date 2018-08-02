@@ -79,16 +79,14 @@ a:hover {
 #profilePicHolder {
     position: absolute;
     top: -6vh;
-    left: 4vw;
-    width: 37.5vw;
+    left: 8vw;
+    width: 29.5vw;
     height: 44.4vh;
     overflow: hidden;
     border-radius: 20px;
-}
-
-#profilePicHolder img {
-    height: 100%;
-    width: 100%;
+    background-image: url("/myPic.png");
+    background-size: cover;
+    background-position: center;
 }
 
 #aboutText {
