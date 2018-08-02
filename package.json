@@ -1,27 +1,28 @@
 {
-  "name": "my-static-site",
-  "version": "1.0.0",
-  "description": "This will load any static html site",
-  "scripts": {
-    "start": "harp server --port $PORT"
-  },
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "express-handlebars": "^3.0.0",
-    "fs": "0.0.1-security",
-    "harp": "*",
-    "nodemailer": "^4.6.7"
-  },
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/danielarielS/danielsWork.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/danielarielS/danielsWork/issues"
-  },
-  "homepage": "https://github.com/danielarielS/danielsWork#readme"
+    "name": "my-static-site",
+    "version": "1.0.0",
+    "description": "This will load any static html site",
+    "scripts": {
+        "start": "node index.js"
+
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3",
+        "express-handlebars": "^3.0.0",
+        "fs": "0.0.1-security",
+        "harp": "*",
+        "nodemailer": "^4.6.7"
+    },
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/danielarielS/danielsWork.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/danielarielS/danielsWork/issues"
+    },
+    "homepage": "https://github.com/danielarielS/danielsWork#readme"
 }
