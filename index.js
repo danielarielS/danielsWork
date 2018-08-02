@@ -54,7 +54,7 @@ app.post("/contact", function(req, res) {
     res.redirect("/");
 });
 
-app.get("*", function(req, res) {
+app.get("/", function(req, res) {
     res.sendFile(__dirname + "/index.html");
 });
 
