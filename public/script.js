@@ -48,12 +48,24 @@ $(document).ready(function() {
         window.scrollTo(0, 0);
     });
     $("#l2").click(function(e) {
-        window.scrollTo(0, 600);
+        window.scrollTo(0, 500);
     });
     $("#l3").click(function() {
-        window.scrollTo(0, 1100);
+        window.scrollTo(0, 1300);
     });
     $("#l4").click(function() {
         window.scrollTo(0, 5100);
+    });
+    $(window).scroll(function(event) {
+        var scroll = $(window).scrollTop();
+        if (scroll > 170) {
+            $("#header1").addClass("typewriter");
+        }
+        if (scroll > 520) {
+            $("#header2").addClass("typewriter");
+        }
+        if (scroll > 3680) {
+            $("#header3").addClass("typewriter");
+        }
     });
 });

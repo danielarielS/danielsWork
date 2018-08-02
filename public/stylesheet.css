@@ -98,12 +98,20 @@ a:hover {
     width: 47vw;
 }
 
+#aboutText h3 {
+    font-size: 1.7vw;
+}
+
+#aboutText p {
+    font-size: 1.2vw;
+}
+
 /* /////////// stackSection ////////// */
 
 #stackSection {
     position: relative;
-    top: 68vh;
-    height: 30vh;
+    top: 85vh;
+    height: 50vh;
 }
 
 .stackHeader {

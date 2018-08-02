@@ -1,13 +1,14 @@
 var express = require("express");
 var app = express();
-
+var mail;
+var pass;
 if (process.env.NODE_ENV) {
-    var mail = process.env.MAIL;
-    var pass = process.env.PASS;
+    mail = process.env.MAIL;
+    pass = process.env.PASS;
 }
 var info = require("./secrets.json");
-var mail = info.mail;
-var pass = info.pass;
+mail = info.mail;
+pass = info.pass;
 var nodemailer = require("nodemailer");
 var bodyParser = require("body-parser");
 
