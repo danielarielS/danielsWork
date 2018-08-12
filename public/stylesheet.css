@@ -164,22 +164,28 @@ span img {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     border-radius: 20px;
     padding: 1vh;
     height: 7vh;
     width: 7vw;
     margin: 0.5vw;
-    animation: slide 0.5s forwards;
-    /* -webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.58);
-    -moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.58);
-    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.58); */
 }
 
-/* #stackImgHolder span:hover {
-    -webkit-box-shadow: -1px 2px 10px 5px rgba(200, 108, 74, 0.58);
-    -moz-box-shadow: -1px 2px 10px 5px rgba(200, 108, 74, 0.58);
-    box-shadow: -1px 2px 10px 5px rgba(200, 108, 74, 0.58);
-} */
+#express img, #aws img, #atom img, #handlebars img {
+    max-width: 130%;
+    max-height: 130%;
+}
+
+#node img {
+    max-width: 140%;
+    max-height: 140%;
+}
+
+#webpack img {
+    max-width: 170%;
+    max-height: 170%;
+}
 
 /* ///////// projectsSection ///////// */
 
@@ -193,8 +199,9 @@ span img {
 
 #mapAppSection {
     position: relative;
-    top: 95vh;
-    height: 125vh;
+    top: 90vh;
+    height: 117vh;
+    text-align: center;
 }
 
 .projectImgHolder {
@@ -231,34 +238,36 @@ span img {
     font-size: 1.2vw;
 }
 
-#madeWith {
-    position: absolute;
-    top: 29vh;
-}
-
-#links {
-    position: absolute;
-    top: 21vh;
-}
-
 #smallText {
     font-size: 1vw;
-    position: absolute;
-    top: 41vh;
 }
 
-#mapDesc {
+.textHolder {
+    position: absolute;
+    top: 9.5vh;
     width: 36vw;
-    position: absolute;
-    top: 10vh;
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#mapAppSection h3 {
+.center {
+    text-align: center;
+    width: 100%;
     font-size: 2vw;
     position: absolute;
     top: 13vh;
-    left: 46vw;
+    /* left: 42vw; */
     font-weight: 600;
+}
+
+.projectHeader {
+    /* font-size: 2vw;
+    position: absolute;
+    top: 13vh;
+    /* left: 42vw; */
 }
 
 .open {
@@ -297,13 +306,13 @@ span img {
 #socialSection {
     position: relative;
     top: 70vh;
-    height: 100vh;
+    height: 92vh;
 }
 
 #imageSection {
     position: relative;
     top: 70vh;
-    height: 100vh;
+    height: 92vh;
 }
 
 #nergySection {

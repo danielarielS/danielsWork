@@ -52,38 +52,41 @@
     <section id="stackSection">
         <div id="header1" class="stackHeader headFont">My Stack</div>
         <div id="stackImgHolder">
-            <span class="slide"><img src="/amazonwebservices-original-wordmark.svg" alt=""></span>
-            <span><img src="/atom-original-wordmark.svg" alt=""></span>
+            <span id="aws"><img src="/amazonwebservices-original-wordmark.svg" alt=""></span>
+            <span id="atom"><img src="/atom-original-wordmark.svg" alt=""></span>
             <span><img src="/babel-original.svg" alt=""></span>
             <span><img src="/chrome-original-wordmark.svg" alt=""></span>
             <span><img src="/css3-original-wordmark.svg" alt=""></span>
-            <span><img src="/express-original-wordmark.svg" alt=""></span>
-            <span><img src="/handlebars-original-wordmark.svg" alt=""></span>
+            <span id="express"><img src="/express-original-wordmark.svg" alt=""></span>
+            <span id="handlebars"><img src="/handlebars-original-wordmark.svg" alt=""></span>
             <span><img src="/heroku-original-wordmark.svg" alt=""></span>
             <span><img src="/html5-original-wordmark.svg" alt=""></span>
             <span><img src="/javascript-original.svg" alt=""></span>
             <span><img src="/jquery-original-wordmark.svg" alt=""></span>
-            <span><img src="/nodejs-original-wordmark.svg" alt=""></span>
+            <span id="node"><img src="/nodejs-original-wordmark.svg" alt=""></span>
             <span><img src="/npm-original-wordmark.svg" alt=""></span>
             <span><img src="/postgresql-original-wordmark.svg" alt=""></span>
             <span><img src="/react-original-wordmark.svg" alt=""></span>
             <span><img src="/Redux.png" alt=""></span>
             <span><img src="/vuejs-original-wordmark.svg" alt=""></span>
-            <span><img src="/webpack-original-wordmark.svg" alt=""></span>
+            <span id="webpack"><img src="/webpack-original-wordmark.svg" alt=""></span>
         </div>
 
     </section>
     <section id="mapAppSection">
         <div id="header2" class="stackHeader headFont">My Projects:</div>
-
-        <h3>PinApp</h3>
+        <div class="center">
+            <h3 class="projectHeader">Location Sharing</h3></div>
         <div id="m2" class="mapText boxShadow inAndOut">
-            <p id="mapDesc">A mobile friendly Web Application that allows users to easily add, customize and share their favorite locations.</p>
-            <p id="links"><a target="_blank" rel="noopener noreferrer" href="https://pinapp-spiced.herokuapp.com">Visit the app</a> or <a target="_blank" rel="noopener noreferrer" href="https://github.com/patrinoua/finalproject">check out the code</a></p>
-            <p id="madeWith">Made with <b>Node.js</b>, <b>React</b>, <b>Redux</b> & <b>Socket.io</b></p>
-            <p id="smallText">Project developed in collaboration with <a target="_blank" rel="noopener noreferrer" href="http://angeliki.herokuapp.com/">Angeliki Patrinou</a></p>
+            <div class="textHolder">
+                <h3>PinApp</h3>
+                <p>A mobile friendly Web Application that allows users to easily add, customize and share their favorite locations.</p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://pinapp-spiced.herokuapp.com">Visit the app</a> or <a target="_blank" rel="noopener noreferrer" href="https://github.com/patrinoua/finalproject">check out the code</a></p>
+                <p>Made with <b>Node.js</b>, <b>React</b>, <b>Redux</b> & <b>Socket.io</b></p>
+                <p id="smallText">Project developed in collaboration with <a target="_blank" rel="noopener noreferrer" href="http://angeliki.herokuapp.com/">Angeliki Patrinou</a></p>
+            </div>
         </div>
-        <div id="m1" class="projectImgHolder boxShadow inAndOut"><img src="/pin.png" alt="pinApp"></div>
+        <div id="m1" class="projectImgHolder boxShadow inAndOut"><img src="/pin.jpg" alt="pinApp"></div>
         <div class="open">
             <p id="openClick" class="clickedElement">Discover</p>
             <p id="closeClick" class="clickedElement notVisible">Close</p>
@@ -91,12 +94,15 @@
     </section>
 
     <section id="socialSection">
+        <div class="center">
+            <h3 class="projectHeader">Social Network</h3></div>
         <div id="s2" class="mapText boxShadow inAndOut">
-            <h3>barkWeb</h3>
-            <p>A social network app for people who like dogs, where they can make friends and chat about their favourite thing... "DOGS" </p>
-            <p><a target="_blank" rel="noopener noreferrer" href="https://thedogweb.herokuapp.com/welcome#/">Visit the app</a> or <a target="_blank" rel="noopener noreferrer" href="https://github.com/danielarielS/barkWeb">check out the code</a></p>
-            <p>Made with Node.js, React, Redux and Socket.io</p>
-
+            <div class="textHolder">
+                <h3>barkWeb</h3>
+                <p>A social network app for people who like dogs, where they can make friends and chat about their favourite thing... "DOGS" </p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://thedogweb.herokuapp.com/welcome#/">Visit the app</a> or <a target="_blank" rel="noopener noreferrer" href="https://github.com/danielarielS/barkWeb">check out the code</a></p>
+                <p>Made with <b>Node.js</b>, <b>React</b>, <b>Redux</b> & <b>Socket.io</b></p>
+            </div>
         </div>
         <div id="s1" class="projectImgHolder boxShadow inAndOut"><img src="/dog.png" alt="barkWeb"></div>
         <div class="open">
@@ -105,11 +111,15 @@
         </div>
     </section>
     <section id="imageSection">
+        <div class="center">
+            <h3 class="projectHeader">Kids Image Board</h3></div>
         <div id="i2" class="mapText boxShadow inAndOut">
-            <h3>Image Board</h3>
-            <p>A place for kids to post images and have discussions about them.</p>
-            <p><a target="_blank" rel="noopener noreferrer" href="https://daniel-imageboard.herokuapp.com/">Visit the app</a> or <a target="_blank" rel="noopener noreferrer" href="https://github.com/danielarielS/Imageboard">check out the code</a></p>
-            <p>Made with Node.js, Vue, postgresql and AWS S3</p>
+            <div class="textHolder">
+                <h3>Image Board</h3>
+                <p>A place for kids to post images and have discussions about them.</p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://daniel-imageboard.herokuapp.com/">Visit the app</a> or <a target="_blank" rel="noopener noreferrer" href="https://github.com/danielarielS/Imageboard">check out the code</a></p>
+                <p>Made with <b>Node.js</b>, <b>Vue</b>, <b>postgresql</b> & <b>AWS S3</b></p>
+            </div>
         </div>
         <div id="i1" class="projectImgHolder boxShadow inAndOut"><img src="/img.png" alt="imageBoard"></div>
         <div class="open">
@@ -118,11 +128,15 @@
         </div>
     </section>
     <section id="nergySection">
+        <div class="center">
+            <h3 class="projectHeader">Petition Website</h3></div>
         <div id="n2" class="mapText boxShadow inAndOut">
-            <h3>The nergy initiative</h3>
-            <p>A petition website to promote a fictional product in a kickstarter kind of concept.</p>
-            <p><a target="_blank" rel="noopener noreferrer" href="https://nergy-petition.herokuapp.com/">Visit the app</a> or <a target="_blank" rel="noopener noreferrer" href="https://github.com/danielarielS/nergy-petition">check out the code</a></p>
-            <p>Made with Node.js, Express, postgresql and Handlebars</p>
+            <div class="textHolder">
+                <h3>The nergy initiative</h3>
+                <p>A petition website to promote a fictional product in <br>a kickstarter kind of concept.</p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://nergy-petition.herokuapp.com/">Visit the app</a> or <a target="_blank" rel="noopener noreferrer" href="https://github.com/danielarielS/nergy-petition">check out the code</a></p>
+                <p>Made with <b>Node.js</b>, <b>Express</b>, <b>postgresql</b> & <b>Handlebars</b></p>
+            </div>
         </div>
         <div id="n1" class="projectImgHolder boxShadow inAndOut"><img src="/petition.png" alt="The nergy initiative"></div>
         <div class="open">
