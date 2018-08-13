@@ -12,11 +12,19 @@ $(document).ready(function() {
     //         });
     //     });
     // }
-    if ($(document).scrollTop() > 0) {
+    $(document).scroll(function() {
         console.log("hello");
         $("#profilePicHolder").css("left", "54vw");
         $("#hello").css("left", "100vw");
-    }
+        $("#aboutText").css("opacity", "1");
+        if ($(window).scrollTop() > 655) {
+            $("#stackImgHolder").css("opacity", "1");
+        }
+        if ($(document).scrollTop() > 700) {
+            $(document).off("scroll");
+        }
+    });
+
     $("#stackImgHolder")
         .children("span")
         .hover(

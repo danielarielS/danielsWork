@@ -100,13 +100,20 @@ a:hover {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transition: left 1.5s ease;
 }
 
 #aboutText {
     position: absolute;
-    top: 5vh;
-    right: 4vw;
-    width: 47vw;
+    top: 15vh;
+    left: 10vw;
+    width: 32vw;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.show {
+    opacity: 1 important;
 }
 
 .aboutSection h3 {
@@ -115,12 +122,14 @@ a:hover {
     position: absolute;
     top: 5vh;
     left: 54vw;
+    transition: left 1.5s ease;
 }
 
 #aboutText p {
-    font-size: 1.2vw;
-    line-height: 140%;
-    font-weight: 300;
+    font-size: 1.8vw;
+    line-height: 180%;
+    font-weight: 600;
+    color: white;
 }
 
 /* /////////// stackSection ////////// */
@@ -147,17 +156,30 @@ a:hover {
     position: absolute;
     top: 36vh;
     left: 20vw;
+    opacity: 0;
     width: 60vw;
     height: 40vh;
     /* background-color: white; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    transition: left 3s ease-in;
+    transition: opacity 2s ease;
 }
 
 span img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.inFromLeft {
+    left: 20vw important;
+    opacity: 1 important;
+}
+
+.inFromRight {
+    position: absolute;
+    right: -20vw;
 }
 
 #stackImgHolder span {
@@ -170,6 +192,24 @@ span img {
     height: 7vh;
     width: 7vw;
     margin: 0.5vw;
+    filter: grayscale(1);
+}
+
+@keyframes createBox {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#stackImgHolder span:hover {
+    filter: grayscale(0);
+    animation: createBox 1.5s infinite;
 }
 
 #express img, #aws img, #atom img, #handlebars img {
@@ -487,98 +527,4 @@ footer div {
     -webkit-box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.58);
     -moz-box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.58);
     box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.58);
-}
-
-.typewriter {
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid white;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0em;
-    /* Adjust as needed */
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-    to {
-        width: 100%
-    }
-}
-
-/* The typewriter cursor effect */
-
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent
-    }
-    50% {
-        border-color: black;
-    }
-}
-
-.inAndOut {
-    -webkit-transition: left 1s ease-in-out;
-    -moz-transition: left 1s ease-in-out;
-    -o-transition: left 1s ease-in-out;
-    transition: left 1s ease-in-out;
-    /* -webkit-transition: visibility 1s ease-in-out;
-    -moz-transition: visibility 1s ease-in-out;
-    -o-transition: visibility 1s ease-in-out;
-    transition: visibility 1s ease-in-out; */
-}
-
-.CSS-animation {
-    animation: bounceOutDown 3s infinite;
-}
-
-@keyframes slide {
-    100% {
-        left: 0;
-    }
-}
-
-@keyframes bounceOutDown {
-    50% {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-    60% {
-        transform: translate3d(0, -20px, 0);
-    }
-    70% {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        transform: translate3d(0, 2000px, 0);
-    }
-}
-
-.second-animation {
-    animation-duration: 4.6s;
-    animation-name: bounceOutRight;
-}
-
-@keyframes bounceOutRight {
-    50% {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(-20px, 0, 0);
-    }
-    to {
-        opacity: 0;
-        transform: translate3d(2000px, 0, 0);
-    }
 }
