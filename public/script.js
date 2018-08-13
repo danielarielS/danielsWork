@@ -16,6 +16,9 @@ $(document).ready(function() {
         console.log("hello");
         $("#profilePicHolder").css("left", "54vw");
         $("#hello").css("left", "100vw");
+        setTimeout(function() {
+            $("#hello").css("display", "none");
+        }, 2000);
         $("#aboutText").css("opacity", "1");
         if ($(window).scrollTop() > 655) {
             $("#stackImgHolder").css("opacity", "1");

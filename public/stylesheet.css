@@ -75,6 +75,7 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 /* /////// about section /////// */
