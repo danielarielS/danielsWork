@@ -582,3 +582,10 @@ footer div {
     -moz-box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.58);
     box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.58);
 }
+
+.inAndOut {
+    -webkit-transition: left 1s ease-in-out;
+    -moz-transition: left 1s ease-in-out;
+    -o-transition: left 1s ease-in-out;
+    transition: left 1s ease-in-out;
+}
