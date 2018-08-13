@@ -369,7 +369,16 @@ span img {
 
 /* ///////////// contact //////////////// */
 
-form {}
+fieldset {
+    /* position: absolute;
+    top: 24vh;
+    width: 60vw;
+    height: 28vh;
+    left: 20vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 4fr 1fr; */
+}
 
 #header3 {
     top: 0vh;
@@ -385,18 +394,69 @@ form {}
 fieldset {
     position: relative;
     top: 24vh;
-    width: 48vw;
-    height: 28vh;
-    left: 26vw;
+    width: 60vw;
+    height: 32vh;
+    left: 20vw;
     padding-top: 2vh;
     /* display: flex;
-    flex-direction: column; */
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 4fr 1fr; */
+}
+
+/* ///////////////grid elements/////////// */
+
+label[for="name"] {
+    position: absolute;
+    top: 2vh;
+    left: 2%;
+}
+
+label[for="email"] {
+    position: absolute;
+    top: 2vh;
+    left: 38%;
+}
+
+label[for="subject"] {
+    position: absolute;
+    top: 2vh;
+    left: 70%;
+}
+
+#name {
+    position: absolute;
+    top: 2vh;
+    left: 12%;
+    width: 18%;
+}
+
+#email {
+    position: absolute;
+    top: 2vh;
+    left: 46%;
+    width: 18%;
+}
+
+#subject {
+    position: absolute;
+    top: 2vh;
+    left: 80%;
+    width: 18%;
+}
+
+textarea {
+    position: absolute;
+    top: 10vh;
+    left: 10%;
+    width: 80%;
+    height: 15vh;
+    /* margin-top: 1vh; */
 }
 
 fieldset label {
     font-size: 1.4vw;
-    margin-left: 2vw;
-    margin-bottom: 2.5vh;
+    /* margin-left: 2vw;
+    margin-bottom: 2.5vh; */
 }
 
 fieldset input {
@@ -419,13 +479,16 @@ textarea::placeholder {
     -moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.58);
     box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.58);
     cursor: pointer;
-    width: 8vw;
+    width: 20%;
     height: 4vh;
     border-radius: 10px;
-    margin-left: 20vw;
+    /* margin-left: 20vw; */
     font-size: 1.2vw;
-    margin-top: 2vh;
+    /* margin-top: 2vh; */
     font-weight: 600;
+    position: absolute;
+    top: 80%;
+    left: 40%;
 }
 
 .button:hover {
@@ -433,15 +496,6 @@ textarea::placeholder {
     -webkit-box-shadow: inset 1px 1px 8px 1px rgba(0, 0, 0, 0.58);
     -moz-box-shadow: inset 1px 1px 8px 1px rgba(0, 0, 0, 0.58);
     box-shadow: inset 1px 1px 8px 1px rgba(0, 0, 0, 0.58);
-}
-
-textarea {
-    /* position: absolute;
-    top: 15vh;
-    left: 5vw; */
-    width: 47.3vw;
-    height: 15vh;
-    margin-top: 1vh;
 }
 
 .linkTo {
@@ -464,7 +518,7 @@ textarea {
 
 #link1 {
     position: absolute;
-    top: 61vh;
+    top: 64vh;
     left: 37vw;
 }
 
@@ -480,7 +534,7 @@ textarea {
 
 #link2 {
     position: absolute;
-    top: 61vh;
+    top: 64vh;
     left: 53vw;
     display: flex;
     justify-content: center;
