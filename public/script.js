@@ -12,20 +12,37 @@ $(document).ready(function() {
     //         });
     //     });
     // }
+    var fired = false;
     $(document).scroll(function() {
-        console.log("hello");
-        $("#profilePicHolder").css("left", "54vw");
-        $("#hello").css("left", "100vw");
-        setTimeout(function() {
-            $("#hello").css("display", "none");
-        }, 2000);
-        $("#aboutText").css("opacity", "1");
+        if ($(document).scrollTop() == 0 || !fired) {
+            console.log("hello");
+            $("#profilePicHolder").css("left", "60vw");
+            $("#hello").css("left", "100vw");
+            $("#aboutText").css("opacity", "1");
+            fired = true;
+        } else if ($(document).scrollTop() > 300) {
+            $("#profilePicHolder").css("left", "13vw");
+            // $("#hello").css("display", "block");
+            // $("#hello").removeClass("hide");
+            $("#aboutText").css("opacity", "0");
+            $("#hello").css("left", "54vw");
+            fired = true;
+        }
+
+        $("#l1").click(function(e) {
+            // $("html, body").animate({ scrollTop: 11 }, 300);
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+        });
         if ($(window).scrollTop() > 655) {
             $("#stackImgHolder").css("opacity", "1");
         }
-        if ($(document).scrollTop() > 700) {
-            $(document).off("scroll");
-        }
+        // if ($(document).scrollTop() > 700) {
+        //     $(document).off("scroll");
+        // }
     });
 
     $("#stackImgHolder")
@@ -99,17 +116,29 @@ $(document).ready(function() {
             }
         }
     });
-    $("#l1").click(function(e) {
-        window.scrollTo(0, 0);
-    });
     $("#l2").click(function(e) {
-        window.scrollTo(0, 900);
+        // window.scrollTo(0, 900);
+        window.scroll({
+            top: 900,
+            left: 0,
+            behavior: "smooth"
+        });
     });
     $("#l3").click(function() {
-        window.scrollTo(0, 1950);
+        // window.scrollTo(0, 1950);
+        window.scroll({
+            top: 1700,
+            left: 0,
+            behavior: "smooth"
+        });
     });
     $("#l4").click(function() {
-        window.scrollTo(0, 5650);
+        // window.scrollTo(0, 5650);
+        window.scroll({
+            top: 5650,
+            left: 0,
+            behavior: "smooth"
+        });
     });
     // $(window).scroll(function(event) {
     //     var scroll = $(window).scrollTop();

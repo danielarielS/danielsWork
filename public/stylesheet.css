@@ -3,6 +3,8 @@ body {
     box-sizing: border-box;
     background-color: #f5f5f5;
     font-family: 'Raleway', sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .headFont {
@@ -44,7 +46,7 @@ a:hover {
 }
 
 #l1:hover {
-    color: rgb(200, 108, 74);
+    color: rgb(139, 103, 41);
 }
 
 #linksHolder {
@@ -62,7 +64,7 @@ a:hover {
 }
 
 #linksHolder p:hover {
-    color: rgb(200, 108, 74);
+    color: rgb(139, 103, 41);
 }
 
 #blackImg {
@@ -106,15 +108,19 @@ a:hover {
 
 #aboutText {
     position: absolute;
-    top: 15vh;
-    left: 10vw;
-    width: 32vw;
+    top: 23vh;
+    left: 8vw;
+    width: 54vw;
     opacity: 0;
     transition: opacity 1s ease;
 }
 
 .show {
     opacity: 1 important;
+}
+
+.hide {
+    display: none;
 }
 
 .aboutSection h3 {
@@ -193,7 +199,7 @@ span img {
     height: 7vh;
     width: 7vw;
     margin: 0.5vw;
-    filter: grayscale(1);
+    /* filter: grayscale(1); */
 }
 
 @keyframes createBox {
@@ -210,7 +216,7 @@ span img {
 
 #stackImgHolder span:hover {
     filter: grayscale(0);
-    animation: createBox 1.5s infinite;
+    animation: createBox 1.5s;
 }
 
 #express img, #aws img, #atom img, #handlebars img {
@@ -545,7 +551,7 @@ textarea::placeholder {
 /* ///////////// footer //////////// */
 
 footer {
-    height: 13vh;
+    height: 7vh;
     background-color: black;
     position: relative;
     top: 100vh;
