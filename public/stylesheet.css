@@ -28,6 +28,7 @@ a:hover {
 
 #header {
     position: fixed;
+    z-index: 5;
     top: 0px;
     height: 7vh;
     width: 100vw;
@@ -96,7 +97,7 @@ a:hover {
     left: 13vw;
     width: 38vw;
     height: 44vh;
-    /* height: 44.4vh; */
+    z-index: 2;
     overflow: hidden;
     border-radius: 20px;
     background-image: url("/myPic.jpg");
@@ -112,7 +113,7 @@ a:hover {
     left: 8vw;
     width: 54vw;
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity 1.5s ease;
 }
 
 .show {
@@ -199,7 +200,6 @@ span img {
     height: 7vh;
     width: 7vw;
     margin: 0.5vw;
-    /* filter: grayscale(1); */
 }
 
 @keyframes createBox {
@@ -214,10 +214,13 @@ span img {
     }
 }
 
-#stackImgHolder span:hover {
-    filter: grayscale(0);
+.makeBigger {
     animation: createBox 1.5s;
 }
+
+/* #stackImgHolder span:hover {
+    animation: createBox 1.5s;
+} */
 
 #express img, #aws img, #atom img, #handlebars img {
     max-width: 130%;

@@ -43,18 +43,41 @@ $(document).ready(function() {
         // if ($(document).scrollTop() > 700) {
         //     $(document).off("scroll");
         // }
+        /////// pic 1 ////////
+        var top = $(window).scrollTop(),
+            divBottom = $("#m1").offset().top + $("#m1").outerHeight();
+        if (divBottom < top + 250) {
+            $("#closeClick").trigger("click");
+        }
+        //////// pic 2 ////////
+        var top = $(window).scrollTop(),
+            divBottom = $("#s1").offset().top + $("#s1").outerHeight();
+        if (divBottom < top + 250) {
+            $("#closeClick1").trigger("click");
+        }
+        ////////// pic 3 /////////////
+        var top = $(window).scrollTop(),
+            divBottom = $("#i1").offset().top + $("#i1").outerHeight();
+        if (divBottom < top + 250) {
+            $("#closeClick2").trigger("click");
+        }
+        ///////// pic 4 ////////////
+        var top = $(window).scrollTop(),
+            divBottom = $("#n1").offset().top + $("#n1").outerHeight();
+        if (divBottom < top + 250) {
+            $("#closeClick3").trigger("click");
+        }
     });
 
     $("#stackImgHolder")
         .children("span")
-        .hover(
-            function(e) {
-                $(this).addClass("CSS-animation");
-            },
-            function() {
-                $(this).removeClass("CSS-animation");
-            }
-        );
+        .mouseenter(function(e) {
+            $(this).addClass("makeBigger");
+            var that = $(this);
+            setTimeout(function() {
+                that.removeClass("makeBigger");
+            }, 1500);
+        });
     $("#openClick").click(function(e) {
         $("#m1").addClass("movePicLeft");
         $("#m2").addClass("moveTextLeft");
