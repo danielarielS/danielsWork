@@ -1,0 +1,73 @@
+@media only screen and (max-device-width: 768px) {
+    #l1 {
+        font-size: 18px;
+    }
+    #linksHolder p {
+        font-size: 12px;
+    }
+    #linksHolder {
+        width: 30vw;
+    }
+    #profilePicHolder {}
+    #aboutText {
+        width: 44vw;
+    }
+    #hello {
+        top: 17vh;
+    }
+    #aboutText p {
+        font-size: 2.2vw;
+    }
+    #stackImgHolder {
+        left: 15vw;
+        width: 70vw;
+    }
+    .projectImgHolder {
+        height: 28vh;
+    }
+    .mapText {
+        height: 28vh;
+    }
+    .textHolder {
+        top: 2vh;
+        height: 22vh;
+    }
+    .textHolder p {
+        font-size: 1.5vw;
+    }
+    .open {
+        top: 62vh;
+    }
+    #mapAppSection {
+        height: 95vh;
+    }
+    #socialSection {
+        height: 75vh;
+    }
+    #imageSection {
+        height: 75vh;
+    }
+    #nergySection {
+        height: 70vh;
+    }
+    .linkTo {
+        height: 5vh;
+    }
+    footer div {
+        font-size: 2vw;
+    }
+    .center {
+        top: 10vh;
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-device-width: 450px) {
+    #linksHolder {
+        width: 50vw;
+    }
+    #profilePicHolder {}
+    #aboutText {
+        width: 44vw;
+    }
+}

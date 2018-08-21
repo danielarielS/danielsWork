@@ -77,7 +77,7 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: scroll;
+    /* background-attachment: scroll; */
     background-attachment: fixed;
 }
 
@@ -85,9 +85,10 @@ a:hover {
 
 .aboutSection {
     height: 93vh;
-    width: 100%;
+    width: 100vw;
     position: relative;
     top: 7vh;
+    overflow-x: hidden;
     /* background-color: #f5f5f5; */
 }
 
@@ -252,6 +253,42 @@ span img {
     top: 90vh;
     height: 117vh;
     text-align: center;
+}
+
+#m1 {
+    background: url("/pin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* background-attachment: scroll; */
+    background-attachment: local;
+}
+
+#s1 {
+    background: url("/dog.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* background-attachment: scroll; */
+    background-attachment: local;
+}
+
+#i1 {
+    background: url("/img.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* background-attachment: scroll; */
+    background-attachment: local;
+}
+
+#n1 {
+    background: url("/petition.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* background-attachment: scroll; */
+    background-attachment: local;
 }
 
 .projectImgHolder {
