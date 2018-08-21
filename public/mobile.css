@@ -26,7 +26,10 @@
         height: 28vh;
     }
     .mapText {
-        height: 28vh;
+        height: 26vh;
+    }
+    .mapText h3 {
+        margin-bottom: 1vh;
     }
     .textHolder {
         top: 2vh;
@@ -34,6 +37,7 @@
     }
     .textHolder p {
         font-size: 1.5vw;
+        margin: 0.5vh;
     }
     .open {
         top: 62vh;
@@ -84,8 +88,8 @@
         font-size: 8vw;
     }
     #stackImgHolder {
-        left: 10vw;
-        width: 80vw;
+        left: 12vw;
+        width: 76vw;
     }
     .open {
         width: 20vw;
