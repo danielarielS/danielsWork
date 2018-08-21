@@ -66,8 +66,95 @@
     #linksHolder {
         width: 50vw;
     }
-    #profilePicHolder {}
+    #profilePicHolder {
+        width: 35vw;
+    }
     #aboutText {
-        width: 44vw;
+        top: 27vh;
+        left: 4vw;
+        width: 52vw;
+    }
+    #aboutText p {
+        font-size: 2.8vw;
+    }
+    #hello {
+        top: 26vh;
+    }
+    .stackHeader {
+        font-size: 8vw;
+    }
+    #stackImgHolder {
+        left: 10vw;
+        width: 80vw;
+    }
+    .open {
+        width: 20vw;
+        left: 40vw;
+    }
+    .clickedElement {
+        font-size: 3vw;
+    }
+    #link1 {
+        left: 28vw;
+    }
+    #link2 {
+        left: 58vw;
+    }
+    .linkTo {
+        height: 4vh;
+        width: 12vw;
+    }
+    fieldset input {
+        height: 2vh;
+        width: 5vw;
+    }
+    fieldset {
+        width: 72vw;
+        left: 10vw;
+    }
+    input::placeholder {
+        font-size: 2.2vw;
+    }
+    textarea::placeholder {
+        font-size: 2vw;
+    }
+    .button {
+        font-size: 2vw;
+    }
+    label[for="name"] {
+        font-size: 2vw;
+        top: 3vh;
+    }
+    label[for="email"] {
+        font-size: 2vw;
+        top: 3vh;
+        margin-left: -1.5vw;
+    }
+    label[for="subject"] {
+        font-size: 2vw;
+        top: 3vh;
+        margin-left: -1.5vw;
+    }
+    footer div {
+        font-size: 3.5vw;
+    }
+    #contact h4 {
+        left: 15vw;
+        font-size: 2.5vw;
+    }
+    .textHolder p {
+        font-size: 2.4vw;
+    }
+    #m1 {
+        background: url("/pin1.jpg");
+    }
+    #s1 {
+        background: url("/dog1.png");
+    }
+    #i1 {
+        background: url("/img1.jpg");
+    }
+    #n1 {
+        background: url("/petition1.jpg");
     }
 }
