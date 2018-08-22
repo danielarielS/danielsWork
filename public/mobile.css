@@ -193,6 +193,10 @@
     #hello {
         top: 7vh;
         font-size: 14vw;
+        left: 32vw;
+    }
+    #profilePicHolder {
+        left: 33vw;
     }
     #aboutText {
         width: 92vw;

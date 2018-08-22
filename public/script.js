@@ -141,7 +141,7 @@ $(document).ready(function() {
     });
 
     $("#l2").click(function(e) {
-        if ($(window).width() < 500) {
+        if ($(window).width() < 600) {
             window.scroll({
                 top: 750,
                 left: 0,
@@ -156,7 +156,7 @@ $(document).ready(function() {
         }
     });
     $("#l3").click(function() {
-        if ($(window).width() < 500) {
+        if ($(window).width() < 600) {
             window.scroll({
                 top: 1450,
                 left: 0,
