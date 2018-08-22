@@ -251,4 +251,19 @@
     #nergySection {
         height: 85vh;
     }
+    #subject {
+        left: 78%;
+        width: 16%;
+    }
+    #email {
+        left: 45%;
+        width: 16%;
+    }
+    #name {
+        left: 11%;
+        width: 16%;
+    }
+    label[for="subject"], label[for="email"] {
+        margin-left: -3.5vw;
+    }
 }
