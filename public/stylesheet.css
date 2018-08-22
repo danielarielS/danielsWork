@@ -24,6 +24,11 @@ a:hover {
 
 /* font-family: 'Convergence', sans-serif; */
 
+#projects {
+    position: absolute;
+    top: -50px;
+}
+
 /* /////// navigation /////// */
 
 #header {

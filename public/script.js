@@ -141,34 +141,33 @@ $(document).ready(function() {
     });
 
     $("#l2").click(function(e) {
-        if ($(window).width() < 600) {
-            window.scroll({
-                top: 750,
-                left: 0,
-                behavior: "smooth"
-            });
-        } else {
-            window.scroll({
-                top: 900,
-                left: 0,
-                behavior: "smooth"
-            });
-        }
+        $("html,body").animate(
+            {
+                scrollTop: $("#stackSection").offset().top
+            },
+            "slow"
+        );
+        // if ($(window).width() < 600) {
+        //     window.scroll({
+        //         top: "#stackSection",
+        //         left: 0,
+        //         behavior: "smooth"
+        //     });
+        // } else {
+        //     window.scroll({
+        //         top: "#stackSection",
+        //         left: 0,
+        //         behavior: "smooth"
+        //     });
+        // }
     });
     $("#l3").click(function() {
-        if ($(window).width() < 600) {
-            window.scroll({
-                top: 1450,
-                left: 0,
-                behavior: "smooth"
-            });
-        } else {
-            window.scroll({
-                top: 1700,
-                left: 0,
-                behavior: "smooth"
-            });
-        }
+        $("html,body").animate(
+            {
+                scrollTop: $("#projects").offset().top
+            },
+            "slow"
+        );
     });
     $("#l4").click(function() {
         // window.scrollTo(0, 5650);
@@ -178,16 +177,4 @@ $(document).ready(function() {
             behavior: "smooth"
         });
     });
-    // $(window).scroll(function(event) {
-    //     var scroll = $(window).scrollTop();
-    //     if (scroll > 170) {
-    //         $("#header1").addClass("typewriter");
-    //     }
-    //     if (scroll > 520) {
-    //         $("#header2").addClass("typewriter");
-    //     }
-    //     if (scroll > 3680) {
-    //         $("#header3").addClass("typewriter");
-    //     }
-    // });
 });
