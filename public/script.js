@@ -139,21 +139,36 @@ $(document).ready(function() {
             }
         }
     });
+
     $("#l2").click(function(e) {
-        // window.scrollTo(0, 900);
-        window.scroll({
-            top: 900,
-            left: 0,
-            behavior: "smooth"
-        });
+        if ($(window).width() < 500) {
+            window.scroll({
+                top: 750,
+                left: 0,
+                behavior: "smooth"
+            });
+        } else {
+            window.scroll({
+                top: 900,
+                left: 0,
+                behavior: "smooth"
+            });
+        }
     });
     $("#l3").click(function() {
-        // window.scrollTo(0, 1950);
-        window.scroll({
-            top: 1700,
-            left: 0,
-            behavior: "smooth"
-        });
+        if ($(window).width() < 500) {
+            window.scroll({
+                top: 1450,
+                left: 0,
+                behavior: "smooth"
+            });
+        } else {
+            window.scroll({
+                top: 1700,
+                left: 0,
+                behavior: "smooth"
+            });
+        }
     });
     $("#l4").click(function() {
         // window.scrollTo(0, 5650);

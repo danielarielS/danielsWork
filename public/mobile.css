@@ -110,11 +110,11 @@
     }
     fieldset input {
         height: 2vh;
-        width: 5vw;
+        width: 4vw;
     }
     fieldset {
-        width: 72vw;
-        left: 10vw;
+        width: 88vw;
+        left: 2vw;
     }
     input::placeholder {
         font-size: 2.2vw;
@@ -151,14 +151,104 @@
     }
     #m1 {
         background: url("/pin1.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: local;
     }
     #s1 {
         background: url("/dog1.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: local;
     }
     #i1 {
         background: url("/img1.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: local;
     }
     #n1 {
         background: url("/petition1.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: local;
+    }
+    #blackImg {
+        background-color: black;
+        background-image: radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+        background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+        background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+        /* background: url("/4.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        background-position: center;
+
+        background-attachment: fixed; */
+    }
+    #hello {
+        top: 7vh;
+        font-size: 14vw;
+    }
+    #aboutText {
+        width: 92vw;
+        top: 50vh;
+        left: 4vw;
+    }
+    #aboutText p {
+        font-size: 4vw;
+    }
+    #stackImgHolder {
+        left: 5vw;
+        width: 90vw;
+    }
+    #stackImgHolder span {
+        height: 5vh;
+        width: 9vw;
+    }
+    .projectImgHolder {
+        width: 100vw;
+        left: 0vw;
+    }
+    .mapText {
+        top: 55vh;
+        left: 0vw;
+        width: 100vw;
+        height: 28vh;
+    }
+    .open {
+        display: none;
+    }
+    .textHolder {
+        width: 90vw;
+        left: 5vw;
+        height: 28vh;
+        top: 0;
+    }
+    .textHolder h3 {
+        font-size: 6vw;
+        margin-top: 0vh;
+    }
+    .textHolder p {
+        font-size: 3vw;
+    }
+    #smallText {
+        font-size: 2vw;
+    }
+    #mapAppSection {
+        height: 105vh;
+    }
+    #socialSection {
+        height: 85vh;
+    }
+    #imageSection {
+        height: 85vh;
+    }
+    #nergySection {
+        height: 85vh;
     }
 }
