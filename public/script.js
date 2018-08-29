@@ -39,7 +39,7 @@ $(document).ready(function() {
                 behavior: "smooth"
             });
         });
-        if ($(window).scrollTop() > 655) {
+        if ($(window).scrollTop() > 600) {
             $("#stackImgHolder").css("opacity", "1");
         }
         // if ($(document).scrollTop() > 700) {
