@@ -71,9 +71,13 @@
         width: 50vw;
     }
     #profilePicHolder {
-        width: 35vw;
+        width: 50vw;
+        left: 25vw;
     }
-    #aboutText {
+    .moveProfilePic {
+        left: 45vw !important;
+    }
+    /* #aboutText {
         top: 27vh;
         left: 4vw;
         width: 52vw;
@@ -83,6 +87,19 @@
     }
     #hello {
         top: 26vh;
+    } */
+    #hello {
+        top: 0vh;
+        font-size: 16vw;
+        left: 29vw;
+    }
+    #aboutText {
+        width: 92vw;
+        top: 53vh;
+        left: 4vw;
+    }
+    #aboutText p {
+        font-size: 4vw;
     }
     .stackHeader {
         font-size: 8vw;
@@ -190,22 +207,6 @@
 
         background-attachment: fixed; */
     }
-    #hello {
-        top: 7vh;
-        font-size: 14vw;
-        left: 32vw;
-    }
-    #profilePicHolder {
-        left: 33vw;
-    }
-    #aboutText {
-        width: 92vw;
-        top: 50vh;
-        left: 4vw;
-    }
-    #aboutText p {
-        font-size: 4vw;
-    }
     #stackImgHolder {
         left: 5vw;
         width: 90vw;
@@ -217,6 +218,8 @@
     .projectImgHolder {
         width: 100vw;
         left: 0vw;
+        height: 37vh;
+        top: 18vh;
     }
     .mapText {
         top: 55vh;
@@ -269,5 +272,13 @@
     }
     label[for="subject"], label[for="email"] {
         margin-left: -3.5vw;
+    }
+    .mapText {
+        background-color: #f5f5f5;
+    }
+    .boxShadow {
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.58);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.58);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.58);
     }
 }

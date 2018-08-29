@@ -316,7 +316,6 @@ span img {
     position: relative;
     top: 24vh;
     left: 23.5vw;
-    /* background-color: rgba(156, 159, 180, 0.81); */
     background-color: rgba(183, 176, 162, 0.6);
     transition: zIndex 1s ease-in-out;
     display: flex;
@@ -613,6 +612,14 @@ footer div {
 }
 
 /* /////// animations //////// */
+
+.moveProfilePic {
+    left: 60vw !important;
+}
+
+.moveHello {
+    left: 100vw !important;
+}
 
 .movePicLeft {
     left: -23vw;

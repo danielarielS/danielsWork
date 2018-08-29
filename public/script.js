@@ -16,16 +16,18 @@ $(document).ready(function() {
     $(document).scroll(function() {
         if ($(document).scrollTop() == 0 || !fired) {
             console.log("hello");
-            $("#profilePicHolder").css("left", "60vw");
-            $("#hello").css("left", "100vw");
+            // $("#profilePicHolder").css("left", "60vw");
+            $("#profilePicHolder").addClass("moveProfilePic");
+            // $("#hello").css("left", "100vw");
+            $("#hello").addClass("moveHello");
             $("#aboutText").css("opacity", "1");
             fired = true;
         } else if ($(document).scrollTop() > 300) {
-            $("#profilePicHolder").css("left", "13vw");
-            // $("#hello").css("display", "block");
-            // $("#hello").removeClass("hide");
+            // $("#profilePicHolder").css("left", "13vw");
+            $("#profilePicHolder").removeClass("moveProfilePic");
+            $("#hello").removeClass("moveHello");
             $("#aboutText").css("opacity", "0");
-            $("#hello").css("left", "54vw");
+            // $("#hello").css("left", "54vw");
             fired = true;
         }
 
